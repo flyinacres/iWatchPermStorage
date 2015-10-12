@@ -81,6 +81,8 @@
 		A5074AEE1BCC75A4008B9BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5074AF01BCC75A4008B9BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		A5074AF21BCC75A4008B9BDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5074AFE1BCC78DF008B9BDE /* iWatchPermStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iWatchPermStore.entitlements; sourceTree = "<group>"; };
+		A5074AFF1BCC7914008B9BDE /* iWatchPermStore WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iWatchPermStore WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		A5074AB41BCC759D008B9BDE /* iWatchPermStore */ = {
 			isa = PBXGroup;
 			children = (
+				A5074AFE1BCC78DF008B9BDE /* iWatchPermStore.entitlements */,
 				A5074AB71BCC759D008B9BDE /* AppDelegate.swift */,
 				A5074AB91BCC759D008B9BDE /* ViewController.swift */,
 				A5074ABB1BCC759D008B9BDE /* Main.storyboard */,
@@ -171,6 +174,7 @@
 		A5074ADC1BCC75A3008B9BDE /* iWatchPermStore WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A5074AFF1BCC7914008B9BDE /* iWatchPermStore WatchKit Extension.entitlements */,
 				A5074AE01BCC75A3008B9BDE /* InterfaceController.swift */,
 				A5074AE21BCC75A3008B9BDE /* NotificationController.swift */,
 				A5074AE41BCC75A3008B9BDE /* Images.xcassets */,
@@ -290,6 +294,12 @@
 				TargetAttributes = {
 					A5074AB11BCC759D008B9BDE = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 3T8T4BQRQJ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A5074AC61BCC759D008B9BDE = {
 						CreatedOnToolsVersion = 6.4;
@@ -297,6 +307,12 @@
 					};
 					A5074ADA1BCC75A3008B9BDE = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 3T8T4BQRQJ;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A5074AE71BCC75A4008B9BDE = {
 						CreatedOnToolsVersion = 6.4;
@@ -522,9 +538,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iWatchPermStore/iWatchPermStore.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iWatchPermStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -532,9 +552,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iWatchPermStore/iWatchPermStore.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iWatchPermStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -607,6 +631,9 @@
 		A5074AFB1BCC75A4008B9BDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "iWatchPermStore WatchKit Extension/iWatchPermStore WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -614,6 +641,7 @@
 				INFOPLIST_FILE = "iWatchPermStore WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -621,9 +649,13 @@
 		A5074AFC1BCC75A4008B9BDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "iWatchPermStore WatchKit Extension/iWatchPermStore WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iWatchPermStore WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

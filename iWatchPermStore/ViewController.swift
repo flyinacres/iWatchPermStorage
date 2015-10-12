@@ -12,7 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        var defaults = NSUserDefaults(suiteName: "group.com.qpiapps.exampleAppGroup")
+        
+        var age2 = defaults?.objectForKey("sharedStoredAge") as? Int
+        if age2 != nil {
+            println("and from the phone")
+            println(age2!)
+        }
     }
 
     override func didReceiveMemoryWarning() {

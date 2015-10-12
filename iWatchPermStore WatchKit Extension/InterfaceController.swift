@@ -16,19 +16,17 @@ class InterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
         
         var age = 34
-        //NSUserDefaults.standardUserDefaults().setObject(age, forKey: "storedAge")
+        var defaults = NSUserDefaults(suiteName: "group.com.qpiapps.exampleAppGroup")
+
+        defaults?.setObject(age, forKey: "sharedStoredAge")
         
-        var age2 = NSUserDefaults.standardUserDefaults().objectForKey("storedAge") as? Int
+        defaults?.synchronize()
+        
+        var age2 = defaults?.objectForKey("sharedStoredAge") as? Int
         if age2 != nil {
                 println(age2!)
         }
-        var array = [5, 4, 3, 2]
-       // NSUserDefaults.standardUserDefaults().setObject(array, forKey: "storedArray")
-        var receivedArray: AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey("storedArray")
-        
-        if var newArray = receivedArray as? NSArray {
-            println(receivedArray!)
-        }
+
     }
 
     override func willActivate() {
