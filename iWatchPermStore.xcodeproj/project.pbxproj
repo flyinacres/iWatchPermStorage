@@ -13,6 +13,13 @@
 		A5074ABF1BCC759D008B9BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5074ABE1BCC759D008B9BDE /* Images.xcassets */; };
 		A5074AC21BCC759D008B9BDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5074AC01BCC759D008B9BDE /* LaunchScreen.xib */; };
 		A5074ACE1BCC759D008B9BDE /* iWatchPermStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5074ACD1BCC759D008B9BDE /* iWatchPermStoreTests.swift */; };
+		A5074AE11BCC75A3008B9BDE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5074AE01BCC75A3008B9BDE /* InterfaceController.swift */; };
+		A5074AE31BCC75A3008B9BDE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5074AE21BCC75A3008B9BDE /* NotificationController.swift */; };
+		A5074AE51BCC75A3008B9BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5074AE41BCC75A3008B9BDE /* Images.xcassets */; };
+		A5074AE91BCC75A4008B9BDE /* iWatchPermStore WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A5074AE81BCC75A4008B9BDE /* iWatchPermStore WatchKit App.app */; };
+		A5074AF11BCC75A4008B9BDE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5074AEF1BCC75A4008B9BDE /* Interface.storyboard */; };
+		A5074AF31BCC75A4008B9BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5074AF21BCC75A4008B9BDE /* Images.xcassets */; };
+		A5074AF61BCC75A4008B9BDE /* iWatchPermStore WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5074ADB1BCC75A3008B9BDE /* iWatchPermStore WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,35 @@
 			remoteGlobalIDString = A5074AB11BCC759D008B9BDE;
 			remoteInfo = iWatchPermStore;
 		};
+		A5074AEA1BCC75A4008B9BDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5074AAA1BCC759D008B9BDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5074AE71BCC75A4008B9BDE;
+			remoteInfo = "iWatchPermStore WatchKit App";
+		};
+		A5074AF41BCC75A4008B9BDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5074AAA1BCC759D008B9BDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5074ADA1BCC75A3008B9BDE;
+			remoteInfo = "iWatchPermStore WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5074AFD1BCC75A4008B9BDE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5074AF61BCC75A4008B9BDE /* iWatchPermStore WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A5074AB21BCC759D008B9BDE /* iWatchPermStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWatchPermStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +71,16 @@
 		A5074AC71BCC759D008B9BDE /* iWatchPermStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iWatchPermStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5074ACC1BCC759D008B9BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5074ACD1BCC759D008B9BDE /* iWatchPermStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iWatchPermStoreTests.swift; sourceTree = "<group>"; };
+		A5074ADB1BCC75A3008B9BDE /* iWatchPermStore WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iWatchPermStore WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5074ADE1BCC75A3008B9BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5074ADF1BCC75A3008B9BDE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A5074AE01BCC75A3008B9BDE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A5074AE21BCC75A3008B9BDE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A5074AE41BCC75A3008B9BDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A5074AE81BCC75A4008B9BDE /* iWatchPermStore WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iWatchPermStore WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5074AEE1BCC75A4008B9BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5074AF01BCC75A4008B9BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A5074AF21BCC75A4008B9BDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5074AD81BCC75A3008B9BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +113,8 @@
 			children = (
 				A5074AB41BCC759D008B9BDE /* iWatchPermStore */,
 				A5074ACA1BCC759D008B9BDE /* iWatchPermStoreTests */,
+				A5074ADC1BCC75A3008B9BDE /* iWatchPermStore WatchKit Extension */,
+				A5074AEC1BCC75A4008B9BDE /* iWatchPermStore WatchKit App */,
 				A5074AB31BCC759D008B9BDE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +124,8 @@
 			children = (
 				A5074AB21BCC759D008B9BDE /* iWatchPermStore.app */,
 				A5074AC71BCC759D008B9BDE /* iWatchPermStoreTests.xctest */,
+				A5074ADB1BCC75A3008B9BDE /* iWatchPermStore WatchKit Extension.appex */,
+				A5074AE81BCC75A4008B9BDE /* iWatchPermStore WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +168,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A5074ADC1BCC75A3008B9BDE /* iWatchPermStore WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5074AE01BCC75A3008B9BDE /* InterfaceController.swift */,
+				A5074AE21BCC75A3008B9BDE /* NotificationController.swift */,
+				A5074AE41BCC75A3008B9BDE /* Images.xcassets */,
+				A5074ADD1BCC75A3008B9BDE /* Supporting Files */,
+			);
+			path = "iWatchPermStore WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A5074ADD1BCC75A3008B9BDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5074ADE1BCC75A3008B9BDE /* Info.plist */,
+				A5074ADF1BCC75A3008B9BDE /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5074AEC1BCC75A4008B9BDE /* iWatchPermStore WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A5074AEF1BCC75A4008B9BDE /* Interface.storyboard */,
+				A5074AF21BCC75A4008B9BDE /* Images.xcassets */,
+				A5074AED1BCC75A4008B9BDE /* Supporting Files */,
+			);
+			path = "iWatchPermStore WatchKit App";
+			sourceTree = "<group>";
+		};
+		A5074AED1BCC75A4008B9BDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5074AEE1BCC75A4008B9BDE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +216,12 @@
 				A5074AAE1BCC759D008B9BDE /* Sources */,
 				A5074AAF1BCC759D008B9BDE /* Frameworks */,
 				A5074AB01BCC759D008B9BDE /* Resources */,
+				A5074AFD1BCC75A4008B9BDE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A5074AF51BCC75A4008B9BDE /* PBXTargetDependency */,
 			);
 			name = iWatchPermStore;
 			productName = iWatchPermStore;
@@ -150,6 +246,39 @@
 			productReference = A5074AC71BCC759D008B9BDE /* iWatchPermStoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A5074ADA1BCC75A3008B9BDE /* iWatchPermStore WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5074AFA1BCC75A4008B9BDE /* Build configuration list for PBXNativeTarget "iWatchPermStore WatchKit Extension" */;
+			buildPhases = (
+				A5074AD71BCC75A3008B9BDE /* Sources */,
+				A5074AD81BCC75A3008B9BDE /* Frameworks */,
+				A5074AD91BCC75A3008B9BDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5074AEB1BCC75A4008B9BDE /* PBXTargetDependency */,
+			);
+			name = "iWatchPermStore WatchKit Extension";
+			productName = "iWatchPermStore WatchKit Extension";
+			productReference = A5074ADB1BCC75A3008B9BDE /* iWatchPermStore WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A5074AE71BCC75A4008B9BDE /* iWatchPermStore WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5074AF71BCC75A4008B9BDE /* Build configuration list for PBXNativeTarget "iWatchPermStore WatchKit App" */;
+			buildPhases = (
+				A5074AE61BCC75A4008B9BDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iWatchPermStore WatchKit App";
+			productName = "iWatchPermStore WatchKit App";
+			productReference = A5074AE81BCC75A4008B9BDE /* iWatchPermStore WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +294,12 @@
 					A5074AC61BCC759D008B9BDE = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = A5074AB11BCC759D008B9BDE;
+					};
+					A5074ADA1BCC75A3008B9BDE = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A5074AE71BCC75A4008B9BDE = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -183,6 +318,8 @@
 			targets = (
 				A5074AB11BCC759D008B9BDE /* iWatchPermStore */,
 				A5074AC61BCC759D008B9BDE /* iWatchPermStoreTests */,
+				A5074ADA1BCC75A3008B9BDE /* iWatchPermStore WatchKit Extension */,
+				A5074AE71BCC75A4008B9BDE /* iWatchPermStore WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +339,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5074AD91BCC75A3008B9BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5074AE91BCC75A4008B9BDE /* iWatchPermStore WatchKit App.app in Resources */,
+				A5074AE51BCC75A3008B9BDE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5074AE61BCC75A4008B9BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5074AF11BCC75A4008B9BDE /* Interface.storyboard in Resources */,
+				A5074AF31BCC75A4008B9BDE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +380,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5074AD71BCC75A3008B9BDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5074AE31BCC75A3008B9BDE /* NotificationController.swift in Sources */,
+				A5074AE11BCC75A3008B9BDE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +396,16 @@
 			isa = PBXTargetDependency;
 			target = A5074AB11BCC759D008B9BDE /* iWatchPermStore */;
 			targetProxy = A5074AC81BCC759D008B9BDE /* PBXContainerItemProxy */;
+		};
+		A5074AEB1BCC75A4008B9BDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5074AE71BCC75A4008B9BDE /* iWatchPermStore WatchKit App */;
+			targetProxy = A5074AEA1BCC75A4008B9BDE /* PBXContainerItemProxy */;
+		};
+		A5074AF51BCC75A4008B9BDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5074ADA1BCC75A3008B9BDE /* iWatchPermStore WatchKit Extension */;
+			targetProxy = A5074AF41BCC75A4008B9BDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +424,14 @@
 				A5074AC11BCC759D008B9BDE /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A5074AEF1BCC75A4008B9BDE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5074AF01BCC75A4008B9BDE /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -390,6 +572,62 @@
 			};
 			name = Release;
 		};
+		A5074AF81BCC75A4008B9BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = iWatchPermStore_WatchKit_Extension;
+				INFOPLIST_FILE = "iWatchPermStore WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A5074AF91BCC75A4008B9BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = iWatchPermStore_WatchKit_Extension;
+				INFOPLIST_FILE = "iWatchPermStore WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A5074AFB1BCC75A4008B9BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iWatchPermStore WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A5074AFC1BCC75A4008B9BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iWatchPermStore WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +653,22 @@
 			buildConfigurations = (
 				A5074AD51BCC759D008B9BDE /* Debug */,
 				A5074AD61BCC759D008B9BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5074AF71BCC75A4008B9BDE /* Build configuration list for PBXNativeTarget "iWatchPermStore WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5074AF81BCC75A4008B9BDE /* Debug */,
+				A5074AF91BCC75A4008B9BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5074AFA1BCC75A4008B9BDE /* Build configuration list for PBXNativeTarget "iWatchPermStore WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5074AFB1BCC75A4008B9BDE /* Debug */,
+				A5074AFC1BCC75A4008B9BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
